@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_background"
+    tools:context=".Home">
+
+
+    <EditText
+        android:id="@+id/inputsearch"
+        android:layout_width="340dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="332dp"
+        android:autofillHints=""
+        android:background="@drawable/input_bg"
+        android:hint="   SEARCH FOR A PRODUCT"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="125dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/input_bg"
+        android:text="SEARCH"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="@+id/inputsearch"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/inputsearch"
+        app:layout_constraintTop_toBottomOf="@+id/inputsearch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputsearch"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navbar" />
+
+    <TextView
+        android:id="@+id/compare"
+        android:layout_width="284dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/bebas_neue"
+        android:text="COMPARE-IT"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputsearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
