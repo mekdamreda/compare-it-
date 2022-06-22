@@ -87,7 +87,7 @@ public class SearchResults extends AppCompatActivity {
         Intent i = getIntent();
         String SearchContext = i.getStringExtra("SearchContext");
         SearchContext=SearchContext.replaceAll("\\s+","+");
-        String url = "https://serpapi.com/search.json?q="+SearchContext+"&tbm=shop&hl=en&gl=us&api_key=119849874229794268514dfaf7c8e8d1dbb62d41fa6a71fd426c71265c5d935f";
+        String url = "https://serpapi.com/search.json?q="+SearchContext+"&tbm=shop&hl=en&gl=us&api_key=604de854e25ea5e2cdf19f62d8486c3cf84f2035c737c32c554a3506576ed68f";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
             @Override
