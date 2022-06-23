@@ -70,7 +70,7 @@ public class Register extends AppCompatActivity {
         if(user.isEmpty()){
             inputuser.setError("Enter your fullname");
         }else if(!email.matches(emailPattern)){
-            inputemail.setError("Enter a valid mail");
+            inputemail.setError("Enter a valid email");
         }else if(password.isEmpty() || password.length()<6){
             inputpassword.setError("Enter a valid password");
         }else if(age.isEmpty()){

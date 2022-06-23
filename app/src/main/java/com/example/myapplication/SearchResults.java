@@ -80,9 +80,7 @@ public class SearchResults extends AppCompatActivity {
                 return false;
             }
         });
-
     }
-
     private void FechData() {
         Intent i = getIntent();
         String SearchContext = i.getStringExtra("SearchContext");

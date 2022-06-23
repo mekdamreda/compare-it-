@@ -100,7 +100,7 @@ public class Login extends AppCompatActivity {
         String email = inputemail.getText().toString();
         String password = inputpassword.getText().toString();
         if (!email.matches(emailPattern)) {
-            inputemail.setError("Enter a valid mail");
+            inputemail.setError("Enter a valid email");
         } else if (password.isEmpty() || password.length() < 6) {
             inputpassword.setError("Enter a valid password");
         } else {
@@ -114,7 +114,7 @@ public class Login extends AppCompatActivity {
                     if(task.isSuccessful()){
                         progressDialog.dismiss();
                         SendUserToNextActivity();
-                        Toast.makeText(Login.this, "Login with success", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
 
                     }else{
                         progressDialog.dismiss();
